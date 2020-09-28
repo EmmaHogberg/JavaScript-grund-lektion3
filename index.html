@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Lektion 3</h1>
+    <script>
+      // array
+      let frukter = ["äpple", "apelsin", "banan"];
+      console.log(frukter);
+
+      // length, push & sort
+      console.log("Längd på arryen är: " + frukter.length);
+      frukter.push("corona");
+      console.log("Längd på arryen är: " + frukter.length);
+      frukter.sort();
+      console.log(frukter);
+
+      // includes + if & else
+      console.log(frukter.includes("corona"));
+      if (frukter.includes("corona")) {
+        console.log("Oh nooo");
+      } else {
+        console.log("Yes!!!");
+      }
+
+      // while
+      while (frukter.length < 100) {
+        frukter.push("frukt " + frukter.length);
+      }
+      console.log(frukter);
+
+      // forEach
+      frukter.forEach((element) => console.log(element));
+
+      // filter
+      const djur = ["hund", "katt", "felikan", "mus", "lejon", "zebra"];
+      console.log(djur);
+      const resultat = djur.filter((word) => word.length > 4);
+      console.log(resultat);
+
+      // map
+      const byxBreddBarn = [3, 6, 12, 24];
+      const byxBreddVuxen = byxBreddBarn.map((x) => x * 3);
+      console.log(byxBreddVuxen);
+    </script>
+  </body>
+</html>
