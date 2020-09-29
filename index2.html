@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Lektion 3 2020-09-28</h1>
+    <script>
+      let djur = [{}, {}, {}];
+      console.log(
+        djur.push(
+          { name: "Fluffy", art: "katt", year: "2010" },
+          { name: "Hugo", art: "hund", year: "2015" },
+          { name: "Sotis", art: "katt", year: "2019" }
+        )
+      );
+
+      let valpar = djur.filter(baraValpar);
+      function baraValpar(x) {
+        return x.year >= "2019";
+      }
+      console.log(valpar);
+
+      let djurNamn = djur.map(getName);
+      function getName(x) {
+        return x.name;
+      }
+      console.log(djurNamn);
+    </script>
+  </body>
+</html>
