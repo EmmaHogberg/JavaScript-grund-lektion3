@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Lektion 5 2020-10-02</h1>
+    <script>
+      // document.addEventListener("click", function() {
+      //   alert("thank you for clicking")
+      // }
+
+      // Arrow-function
+      document.addEventListener("click", () => alert("thank you for clicking"));
+
+      let myNumbers = [10, 500, 2000];
+      let doubledMyNumber = myNumbers.map((x) => x * 2);
+      console.log(doubledMyNumber);
+
+      // Function hoosting - functionen lever i hela konden om vi skriver "function" och ger den ett namn.
+      // Vid arrow-function har ordningen betydelse.
+      function cool() {
+        console.log("This is super cool");
+      }
+
+      // Template literals
+      let myNameIs = "Brad";
+      console.log(`Hello, my name is ${myNameIs} and the sky is blue`);
+    </script>
+  </body>
+</html>
